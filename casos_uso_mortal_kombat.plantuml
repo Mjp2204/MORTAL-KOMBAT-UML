@@ -1,0 +1,32 @@
+@startuml
+
+skinparam actorStyle awesome
+
+"Jugador" as player
+package Juego {
+    usecase "Iniciar Juego" as 1
+    usecase "Jugar" as 2
+    usecase "Seleccion modo" as 3
+    usecase "Seleccion personajes" as 4
+    usecase "Seleccion escenario" as 5
+    usecase "Inicio round" as 6
+    usecase "Pelea" as 7
+    usecase "Verificar ganador" as 8
+    usecase "Animacion victoria" as 9
+    usecase "Solitario" as 10
+    usecase "Vs" as 11
+}
+
+player --> 1
+1 <|-- 2
+2 --> 3
+2 --> 4
+2 --> 5
+2 --> 6
+2 --> 7
+2 --> 8
+2 --> 9
+3 <.. 10
+3 <.. 11
+
+@enduml
