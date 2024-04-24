@@ -1,0 +1,22 @@
+@startuml
+
+package Logica {
+    class Enemigo
+    class Juego
+    class Personaje
+    class Util 
+    class Main{
+        + Menú
+        + Inicio 
+        + Final
+        - mostrar_menu
+        - mostrar_inicio
+        - mostrar_final
+    }
+
+
+}
+
+Principal -- Main
+
+@enduml
